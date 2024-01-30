@@ -9,15 +9,14 @@ public class StringToInteger {
 	
 	public static int StringToNum(String str)
 	{
-		int num = 0;
-		int len = str.length();
+		int sum = 0;
 		
-		for(int i=0;i<len;i++)
+		for(int i=0;i<str.length();i++)
 		{
-			num = (num * 10) + (int)str.charAt(i) - 48;
+			sum = (sum*10) + (int)str.charAt(i) - 48;
 		}
 		
-		return num;
+		return sum;
 	}
 
 }

@@ -30,8 +30,8 @@ public class ShiftElementToRight {
 	
 	public static void moveElementRight2(int[] a)
 	{	
-		int i = 0;  //z
-		int j = 1;  //nz
+		int i = 0;
+		int j = 0;
 		
 		while(j<a.length)
 		{
@@ -40,15 +40,11 @@ public class ShiftElementToRight {
 				int temp = a[i];
 				a[i] = a[j];
 				a[j] = temp;
-				i++;
+				i++; j++;
+			}
+			else {
 				j++;
 			}
-			else if(a[i]!=0)
-			{
-				j++;
-			}
-			
-			
 		}
 		
 		System.out.println(Arrays.toString(a));
